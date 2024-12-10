@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<head>
+  <meta charset="UTF-8">
+  <title>Ebube Mbanefo - Personal Website Assignment</title>
+  
+  <!-- INTER FONT-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Geist+Mono:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  
+  <!-- Bai Jamjuree -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Geist+Mono:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  
+  <!-- Roboto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Geist+Mono:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<style>
+  
+  body {
+  margin: 0;
+  padding: 0;
+  color: white; 
+  background-color: black;
+  height: 700px;  
+  }
+  
+    .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    height: 20px;
+      }
+      
+    .logo {
+     font-size: 18px;
+     font-family: "Bai Jamjuree", serif;
+     font-weight: 400;
+     font-style: normal;
+     margin-left: 10px
+    }
+  
+    .nav {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+    }
+  
+    .nav-label {
+      font-size: 16px;
+      white-space: nowrap;
+      font-family: "Bai Jamjuree", serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+      
+    ul a {
+      text-decoration: none;
+      text-align: center;
+      color: white;
+      margin: 5px;
+      text-transform: uppercase;
+      font-family: "Bai Jamjuree", serif;
+      font-weight: 400;
+      font-style: normal;
+      margin-right: 20px;
+    }
+  
+  #intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+  }
+  
+  .intro-content {
+    text-align: center;
+    border: medium solid #80102F;
+    border-radius: 20px;
+    background-color: #2B2B2B transparent;
+    margin: 0 30px;
+    padding: 10 0px;
+    letter-spacing: 9px;
+  }
+  
+  .main-title {
+    font-size: 90px;
+    margin-bottom: 0;
+    margin-right: 300px;
+    padding-left: 30px;
+    font-family: "Bai Jamjuree", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .subtitle {
+    font-size: 60px;
+    margin-left: 210px;
+    margin-top: 0;
+    font-family: "Bai Jamjuree", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+   .chapter-1-container {
+    text-align: center;
+    border: medium solid #80102F;
+    border-radius: 20px;
+    background-color: #2B2B2B transparent;
+    margin: 40px 30px;
+    min-height: 400px; 
+    padding: 20px;
+  }
+  
+   .intro-left {
+    float: left;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 50%;
+    margin-left: 30px;
+  }
+  
+  .intro-right {
+    float: right;
+    width: 45%;
+  }
+  
+  .intro-image {
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    border: 3px solid #80102F;
+  }
+  
+  .chapter-1-title {
+    font-family: "Inter", serif;
+    font-size: 2em;
+    font-weight: semi-bold;
+    font-style: normal;
+    margin-top: 0;
+  }
+  
+  .chapter-1-content {
+    font-family: "Roboto Mono", monospace;
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-right: 40px;
+  }
+  
+   .chapter-2-container {
+    text-align: center;
+    border: medium solid #80102F;
+    border-radius: 20px;
+    background-color: #2B2B2B transparent;
+    margin: 40px 30px;
+  }
+  
+   .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+  }
+   
+  .chapter-2-title {
+    font-family: "Inter", serif;
+    font-size: 2em;
+    font-weight: semi-bold;
+    font-style: normal;
+    margin-top: 30px;
+    margin-bottom: 0
+  }
+  
+  .text-left {
+    float: left;
+    width: 40%;
+    font-family: "Roboto Mono", monospace;
+    font-size: 15px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  
+  .text-right {
+    float: left;
+    width: 40%;
+    font-family: "Roboto Mono", monospace;
+    font-size: 15px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-left: 50px;
+    margin-top: 0;
+  }
+  
+  .chapter-3-container {
+    text-align: center;
+    border: medium solid #80102F;
+    border-radius: 20px;
+    background-color: #2B2B2B transparent;
+    margin: 40px 30px;
+  }
+   
+  .chapter-3-title {
+    font-family: "Inter", serif;
+    font-size: 2em;
+    font-weight: semi-bold;
+    font-style: normal;
+    margin-top: 30px;
+    margin-bottom: 0
+  }
+  
+  .first-paragraph {
+    width: 85%;
+    font-family: "Roboto Mono", monospace;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-left: 65px;
+    margin-bottom: 0;
+    padding: 0;
+  }
+  
+  .bottom-paragraphs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    margin: 0;
+  }
+  
+  .text-left-3 {
+    float: left;
+    width: 35%;
+    font-family: "Roboto Mono", monospace;
+    font-size: 15px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: justify;
+    text-justify: inter-word;
+    padding: 0;
+  }
+  
+  .text-right-3 {
+    float: left;
+    width: 45%;
+    font-family: "Roboto Mono", monospace;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-left: 50px;
+    margin-top: 0;
+    padding: 0;
+  }
+  
+  .table-container {
+    text-align: center;
+    max-width: 1200px;
+  }
+  
+  .table-title {
+    font-family: "Roboto Mono", monospace;
+    font-size: large;
+    font-weight: 400;
+    font-style: normal;
+    text-align: justify;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #444;
+  }
+  
+  img {
+    width: 80%;
+    height: 200px;
+  }
+  
+  
+  
+    /*
+  #chapter-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+  }
+  
+  .chapter-4-container {
+    text-align: center;
+    border: medium solid #80102F;
+    border-radius: 20px;
+    background-color: #2B2B2B transparent;
+    margin: 40px 30px;
+  }
+   
+  .chapter-4-title {
+    text-align: left;
+    margin-left: 50px;
+  } */
+  
+</style>
+</head>
+  <div class="header">
+    <div class="logo">Ebube</div>
+    <div class="nav">
+      <div class="nav-label">Chapter</div>
+    <ul>
+      <a href="#prologue">1</a>
+      <a href="#Cringe Create Repeat">2</a>
+      <a href="#The one where I joined AfroxDance">3</a>
+      <a href="#What's Next?">4</a>
+     </ul>
+    </div>
+  </div>
+  
+<div id="Intro">
+  <div class="intro-content">
+    <div class="main-title">ebube's</div>
+    <div class="subtitle">Dance Dance Revolution</div>
+  </div>
+</div>
+  
+  
+  <div class="chapter-1-container">
+    <div class="intro-left">
+      <h2 class="chapter-1-title">Prologue</h2>
+      <img class="intro-image" src="baby picture.jpeg" alt="description of image" width="50px">
+    </div>
+    <div class="intro-right"> 
+      <p class="chapter-1-content">
+       I've loved dancing for as long as I can remember. Movement is a huge part of who I am, it’s a part of my personality and values. Naturally, my love for dance goes hand in hand with my love for music. I’m constantly searching for new songs and artists, and I know I like a song when I immediately start choreographing it in my head. </p>
+
+      <p class="chapter-1-content"> Recently, my sister asked how I knew I was a good dancer. I joked that no one ever told me I was bad, so I just kept going. But reflecting on that, I realized what might seem like raw talent is actually years of practice. Practice that often doesn’t look like practice. I look up tutorials to learn tricky moves and I can spend hours perfecting a choreography until I get it right. Dancing to me doesn’t feel like work. </p>
+
+      <p class="chapter-1-content"> Unfortunately, I don’t have any childhood videos of me dancing (immigrant problems), but here’s a picture of me at about four years old.</p>
+    </div>
+  </div>
+  
+ 
+  <div class="chapter-2-container">
+  <h2 class="chapter-2-title">Cringe Create Repeat</h2>
+    <div class="content">
+      <p class="text-left">
+        A few years later, school became my priority, and dance took a backseat. Although people often said I was a good dancer, I never saw it as a serious path. When asked what I wanted to be, I’d say a doctor or pilot — a dancer never felt like an acceptable answer.
+        <br>
+        In 2020, during the pandemic, TikTok exploded in popularity, and my friends and I were not far behind. The highlight of the pandemic for me was spending hours learning and creating “cringe” TikTok dances with my friends. </p>
+
+      <p class="text-right">
+        We’d compile lists of routines, share them, and spend the entire day making video we’d never post. Though most of the videos never left my drafts, I still revisit them for nostalgia.
+        <br>
+        TikTok also pushed me to explore new styles. My primary dance style, Afro,  wasn’t represented on the platform at the time, so I learnt hip-hop and Dubsmash-style routines. Along the way, I also discovered music and artists I would have never discovered on my own. </p>
+    </div>
+  </div>
+  
+  <div class="chapter-3-container">
+  <h2 class="chapter-3-title">The one where I joined AfroxDance</h2>
+    <p class="first-paragraph">
+      During my first year of university, I joined an Afro dance club called AfroxDance, and it truly saved me. I was stuck in a program that wasn’t for me, struggling with every class, and failing nearly every quiz. On top of that, family issues during that season made it feel like everything was falling apart. I was deeply depressed and anxious, unsure of how to move forward. Those few hours of weekly practice with the team became my sanctuary. Learning dances, creating formations, and spending time with my girls were the highlights of my week, especially during the winter.</p>
+    
+    <div class="bottom-paragraphs">
+      <p class="text-left-3">
+      AfroxDance also challenged me as a dancer. After years of focusing on short TikTok routines, I had to step up and master full-body choreography. It was during this time that dancing became a part of my identity. People would recognize me from performances, and at parties the team would always perform our routines.</p>
+    
+    <p class="text-right-3">
+      Joining AfroxDance was a turning point. It reminded me that dance is not just about movement but about community and connection. It improved both my mental  and physical health and made me grow as a dancer. Though I’m no longer part of the club due to academic demands, I hope to return someday. AfroxDance is a wonderful community, and I encourage everyone to check them out — they’re doing amazing things.</p>
+    </div>
+    
+    <div class="table-container">
+      <table>
+        <th class="table-title">AfroxDance Performances</th>
+        <tr>
+          <td>
+            <img src="cultural-caravan.jpeg" alt="cultural caravan">
+            <div class="caption">Cultural Caravan</div>
+          </td>
+          <td>
+            <img src="afrovibes.jpeg" alt="Afrovibes festival">
+            <div class="caption">Afrovibes</div>
+          </td>
+          <td>
+            <img src="something.jpeg" alt="description of image">
+            <div class="caption">Something</div>
+          </td>
+          <td>
+            <img src="traces-2023.jpeg" alt="Traces 2023">
+            <div class="caption">Traces 2023</div>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  
+<!--    
+<div id="chapter-4">
+  <div class="chapter-4-container">
+  <h2 class="chapter-4-title">What's Next</h2>
+  <p>Though I’ve taken a break from AfroxDance, I haven’t stopped dancing. Over the past year, I’ve been taking drop-in classes at The Studio North in Toronto with some friends from AfroxDance. It was refreshing to be surrounded by people who shared the same love for dance, and some who were even better than me. The challenge was tough but incredibly fulfilling. In the coming year, I plan to take more classes and track my progress. I also want to focus more on my health to become the best version of myself. I’m not aiming to be discovered or become a professional dancer—my goal is simply to be better than I was. I also want to explore other styles, like salsa and hip-hop, and make dance a bigger part of my lifestyle rather than just a hidden hobby. Ultimately, I hope to return to AfroxDance and give back to the community, helping others the way it helped me.
+
+  If you want to follow me on this journey, you can find me on tiktok or send me an  mailto: email :)</p>
+  </div>
+</div> -->
+  
+</body>
+</html>
